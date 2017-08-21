@@ -1,0 +1,18 @@
+#数据库配置
+jdbcUrl=jdbc:mysql://127.0.0.1:3306/bigscreen?useUnicode=true&characterEncoding=UTF-8
+#jdbcUrl=jdbc:mysql://192.168.2.11:3306/bigscreen?useUnicode=true&characterEncoding=UTF-8
+#jdbcUrl=jdbc:mysql://10.130.99.250:3306/bigscreen?useUnicode=true&characterEncoding=UTF-8
+#jdbcUrl=jdbc:mysql://10.129.25.180:3306/bigscreen?useUnicode=true&characterEncoding=UTF-8
+#jdbcUrl=jdbc:mysql://192.168.137.179:3306/bigscreen?useUnicode=true&characterEncoding=UTF-8
+user=root
+password=1234567890
+#user=root
+#password=rendaye
+
+#项目配置 生产环境下请改为false
+devMode=false
+
+#用户名
+userName=admin
+#密码
+passWord=E10ADC3949BA59ABBE56E057F20F883E

@@ -1,0 +1,89 @@
+#urlParameters {
+    /*width: 490px;*/
+}
+
+/* 滚动条 */
+#urlParameters .scrollbar {
+    position: relative;
+    float: right;
+    width: 15px;
+}
+
+/* 轨道 */
+#urlParameters .track {
+    background-color: #00A799;
+    height: 100%;
+    width:13px;
+    position: relative;
+    padding: 0 0;
+    border-radius: 10px;
+}
+
+/* 滚动按钮 */
+#urlParameters .thumb {
+
+    height: 20px;
+    width: 13px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    background-color: #4C4C4C;
+    top: 0;
+    right:0;
+    border-radius: 10px;
+}
+
+/* 内容滚动区域 */
+#urlParameters .viewport {
+    width: 475px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 0px;
+}
+
+/* 滚动的内容 */
+#urlParameters .overview {
+    width: 475px;
+    list-style: none;
+    position: absolute;
+    left: 0; top: 0;
+    float: left;
+}
+
+#urlParameters .thumb .end {
+    overflow: hidden;
+    height: 5px;
+    width: 13px;
+}
+
+#urlParameters .disable{
+    display: none;
+}
+.noSelect {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+/**适配1366分辨率屏幕**/
+@media screen and (max-width: 1366px) {
+
+    #urlParameters {
+        width: 345px;
+    }
+
+    /* 内容滚动区域 */
+    #urlParameters .viewport {
+        width: 320px;
+        height: 180px;
+    }
+
+    /* 滚动的内容 */
+    #urlParameters .overview {
+        width: 320px;
+    }
+
+}

@@ -1,0 +1,514 @@
+@charset "utf-8";
+html,body {
+    margin: 0 !important;
+    padding:0 !important;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+}
+
+a,label,button,li,input[type="button"],input[type="radio"] {
+
+    cursor: pointer;
+}
+
+.dn {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.wrap {
+    /*width: 100%;*/
+    background-color: #00BFB0;
+}
+
+.header {
+    padding: 20px 20px 10px 20px;
+}
+
+.content_right .header {
+    padding-top: 0;
+}
+
+.title {
+    height: 66px;
+    background-color: #FFF;
+    font-size: 22px;
+    color: #4D4D4D;
+    line-height: 66px;
+}
+
+.title span {
+    width: 6px;
+    height: 36px;
+    background-color: #00BFB0;
+    display: block;
+    margin: 15px;;
+
+}
+
+.main {
+    font-size: 17px;
+    color: #6D6D6D;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+.content {
+    padding: 10px 0;
+    height: 100%;
+}
+
+.content input[type="text"] {
+    border-radius: 5px;
+    border: solid 1px #C9C9C9;
+    outline-style: none;
+    padding-left: 15px;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    color: #6E6E6E;
+    background-color: #FCFEFD;
+}
+
+.content_left {
+    width: 67%;
+    height: 100%;
+    background-color: #F3F3F3;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+}
+
+.screens {
+    height: 450px;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+.area {
+    display: block;
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    border-radius: 10px;
+}
+
+.menu {
+    position: absolute;
+    width: 190px;
+    z-index: 5;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+.menu_title {
+    height: 42px;
+    background-color: #4C4C4C;
+    border-bottom: solid 1px #FFF;
+    position: relative;
+}
+
+.menu_title :first-child {
+    font-size: 20px;
+    color: #FFF;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.close {
+    color: #00BFB1;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+    border-left: solid 1px #FFF;
+}
+
+.ment_but {
+    background-color: #4C4C4C;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.ment_but input {
+    width: 77px;
+    height: 25px;
+    font-family: "微软雅黑";
+}
+
+.progress {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #F3F3F3;
+    z-index: 10;
+}
+
+#progress {
+    width:60%;
+    height: 40px;
+    margin:20% auto;
+    /*transition: width 1.2s ease-in-out;*/
+    position: relative;
+    border-radius: 4px;
+    background-color: #14c3a2;
+    background-image: repeating-linear-gradient(44.5deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
+    background-size: 600px 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.merge {
+    background-color: #00BFB1;
+    color: #40625F;
+    border: solid 1px #40625F;
+    border-radius: 5px;
+}
+
+.resolve {
+    background-color: #4C4C4C;
+    color: #21AA9F;
+    border: solid 1px #00BFB1;
+    border-radius: 5px;
+}
+
+.screen {
+    float: left;
+    padding: 4px;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+.screen .icon {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px #D9D9D9;
+    position: relative;
+    z-index: 2;
+}
+
+.screen .icon .isSave{
+    border: solid 15px #00BFB0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.active {
+    background-color: #F5F5F5 !important;
+    border-color: #00BFB0 !important;
+}
+
+.content_right {
+    width: 33%;
+    height: 100%;
+}
+
+.basicParam {
+    height: 150px;
+    padding: 20px 20px 10px 20px;
+}
+
+.basicParam .row{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.basicParam .hint {
+    width: 20%;
+    color: #396A66;
+    font-size: 18px;
+}
+
+.basicParam .param {
+    width: 80%;
+    height: 40px;
+}
+
+.basicParam input[type="text"] {
+    width: 94%;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: solid 1px #C9C9C9;
+    outline-style: none;
+    padding-left: 15px;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    color: #6E6E6E;
+    background-color: #FCFEFD;
+}
+
+.basicParam label {
+    font-size: 15px;
+}
+
+.basicParam input[type="button"] {
+    width: 60px;
+    height: 30px;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.basicParam .save {
+    background-color: #4D4D4D;
+    color: #FFF;
+    border-style: none;
+}
+
+.basicParam .delScreen {
+    background-color: #00BFB0;
+    border: solid 1px #4A4F4F;
+    color: #4A4E4B;
+    margin-right: 10px;
+
+}
+
+.urlParam {
+    height: 230px;
+    padding: 20px;
+}
+
+.urlParamContent {
+    border: solid 1px #386A66;
+    height: 100%;
+    padding: 20px 10px 20px 20px;
+}
+
+.inputArea {
+    padding-right:10px;
+}
+
+.inputArea input[type="text"] {
+    width: 30%;
+
+}
+
+.inputArea input[name="parameter.value"] {
+    margin-left: 10px;
+}
+
+.inputArea input[type="button"] {
+    width: 70px;
+    height: 27px;
+    margin-left: 3%;
+    background-color: #4C4C4C;
+    color: #FFF;
+    font-family: "微软雅黑";
+    border-style: none;
+    border-radius: 5px;
+}
+
+
+.thead {
+    /*width: 470px;*/
+    height: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    /*background-color: #FFF;*/
+}
+
+.thead .th:last-child, .tbody .th:last-child {
+    border-right: solid 1px #4C4C4C;
+}
+
+.thead .th, .tbody .th {
+    width: 16%;
+    border: solid 1px #4C4C4C;
+    border-right-style: none;
+    float: left;
+    height: 40px;
+    margin-top: 0;
+    line-height: 40px;
+    /*padding: 0 10px;*/
+    text-align: center;
+}
+
+.thead .th {
+    background-color: #FFF;
+}
+
+.th a img{
+    margin-top: 3px;
+}
+
+.paramKey {
+    width: 30% !important;
+
+}
+
+.paramValue {
+    width: 30% !important;
+
+}
+
+.tbody {
+    /*width: 470px;*/
+    height: 40px;
+    background-color: #00BFB1;
+    color: #376B67;
+}
+
+.footer {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #4C4C4C;
+}
+
+.footer input {
+    float: right;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    font-weight: 600;
+    color: #426762;
+    background-color: #00BFAF;
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px 30px;
+    margin: 15px 20px;
+}
+
+.footer :first-child {
+    margin-right: 50px;
+}
+
+.footer :nth-child(2) {
+    border: solid 1px #00BEAF;
+    background-color: #4C4C4C;
+    color: #0DAEA0;
+}
+
+input[disabled] {
+    cursor:not-allowed;
+    opacity: 0.7;
+}
+
+
+/**适配1366分辨率屏幕**/
+@media screen and (max-width: 1366px) {
+    .icon {
+        background-size: 80px;
+    }
+
+    .header {
+        padding-top:10px;
+    }
+
+    .title {
+        height: 45px;
+        font-size: 18px;
+        line-height: 45px;
+    }
+
+    .title span {
+        height: 25px;
+        margin: 10px;
+    }
+
+    .screens {
+        height: 400px;
+    }
+
+    .basicParam {
+        height: 130px;
+        padding: 10px 20px 0px 20px;
+    }
+
+    .basicParam .hint {
+        font-size: 15px;
+    }
+
+    .urlParam {
+        height: 230px;
+        padding: 0 20px;
+    }
+
+    /*.thead {
+        width: 320px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .thead .th, .tbody .th {
+        width: 45px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .th a img{
+        margin-top: 3px;
+        width:25px;
+    }
+
+    .paramKey {
+        width: 60px !important;
+
+    }
+
+    .paramValue {
+        width: 85px !important;
+
+    }
+
+    .tbody {
+        width: 320px;
+        height: 30px;
+        background-color: #00BFB1;
+        color: #376B67;
+    }*/
+
+    .footer {
+        height: 50px;
+    }
+
+    .footer input {
+        width: 100px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .footer :first-child {
+        margin-right: 40px;
+
+    }
+
+}

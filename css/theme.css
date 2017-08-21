@@ -1,0 +1,259 @@
+﻿@charset "utf-8";
+
+html,body {
+  margin: 0;
+  height: 100%;
+  font-family: "微软雅黑";
+}
+
+ul {
+  list-style: none;
+}
+
+input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+}
+
+a,label,button,li,input[type="button"],input[type="radio"] {
+
+  cursor: pointer;
+}
+
+.dn {
+  display: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.wrap {
+  width: 100%;
+  background-color: #F3F3F3;
+  min-height: 100%;
+  margin-top: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+}
+
+.header {
+  padding: 20px 20px 10px 20px;
+}
+
+.title {
+  height: 66px;
+  background-color: #FFF;
+  font-size: 22px;
+  color: #4D4D4D;
+  line-height: 66px;
+}
+
+.title span {
+  width: 6px;
+  height: 36px;
+  background-color: #00BFB0;
+  display: block;
+  margin: 15px;;
+
+}
+
+.main {
+  font-size: 17px;
+  color: #6D6D6D;
+}
+
+.content {
+  padding: 0 20px;
+  height: 100%;
+}
+
+.content input[type="text"] {
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #C9C9C9;
+  outline-style: none;
+  padding-left: 15px;
+  font-family: "微软雅黑";
+  font-size: 13px;
+  color: #6E6E6E;
+  background-color: #FCFEFD;
+}
+
+.thtme_name {
+  width: 100%;
+  background-color: #FFF;
+  padding: 10px 0;
+}
+
+.row {
+  height: 40px;
+  line-height: 40px;
+}
+
+.row .hint {
+  width: 200px;
+}
+
+.row .required {
+  color: #F00;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.row .form_item {
+  width: 80%;
+}
+
+.row .form_item input[type='text'] {
+  margin-top: 7px;
+}
+
+.thtme_name .row .form_item input {
+  width: 450px;
+  height: 30px;
+  margin-top: 6px;
+}
+
+.other_parameter {
+  margin-top: 5px;
+  background-color: #FFF;
+  padding: 38px 0 20px 0;
+}
+
+.other_parameter .row {
+  margin-bottom: 20px;
+}
+
+
+.other_parameter .row .form_item ul {
+  width: 580px;
+  height: 40px;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.other_parameter .row .form_item ul li {
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  padding: 0 10px;
+  background-color: #FFF;
+  border: solid #F3F3F3 1px;
+  font-size: 15px;
+  color: #B9B9B9;
+}
+
+.other_parameter .row .form_item ul>li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.form_item .add {
+  width: 60px;
+  height: 30px;
+  margin-top: 6px;
+  background-color: #FFF;
+  border: dashed 1px #DAD5D5;
+  color: #C4C4C4;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  outline-style: none;
+}
+
+.form_item input[type="radio"] {
+  width: 17px;
+  height: 17px;
+}
+
+.form_item input[type="radio"]:not(:first-child) {
+  margin-left: 30px;
+}
+
+.form_item input[type="text"] {
+
+  width: 115px;
+}
+
+input[disabled] {
+  cursor:not-allowed;
+  opacity: 0.7;
+}
+
+#resolution li.active {
+  background-color: #C8C8C8 !important;
+  color: #FFF !important;
+}
+
+.add_resolution input[type="text"] {
+  width: 100px;
+
+}
+
+.add_resolution input[type="button"] {
+  width: 80px;
+  height: 32px;
+  margin: 0 10px;
+  background-color: #4C4C4C;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5px;
+  outline-style: none;
+}
+
+.footer {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #4C4C4C;
+}
+
+.footer input {
+  float: right;
+  font-family: "微软雅黑";
+  font-size: 17px;
+  font-weight: 600;
+  color: #426762;
+  background-color: #00BFAF;
+  border-style: none;
+  border-radius: 3px;
+  padding: 5px 30px;
+  margin: 15px 50px;
+}
+
+/**适配1366分辨率屏幕**/
+@media screen and (max-width: 1366px) {
+
+  .title {
+    height: 56px;
+    font-size: 20px;
+    line-height: 56px;
+  }
+
+  .title span {
+    height: 30px;
+    margin: 12px;;
+  }
+
+  .footer {
+    height: 50px;
+  }
+
+  .footer input {
+    width: 100px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .footer :first-child {
+    margin-right: 40px;
+  }
+}
